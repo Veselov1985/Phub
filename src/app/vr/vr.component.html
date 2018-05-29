@@ -35,12 +35,14 @@
 
     <a-scene vr-mode-ui="enabled:true" (renderStart)='Console()'>
         <a-assets>
-            <video #media #vgHls="vgHls" #vgDash="vgDash" [vgMedia]="media" [vgDash]="url" [vgHls]="url" id="singleVideo" [src]='url' controls autoplay crossorigin>
+            <video #media #vgHls="vgHls" #vgDash="vgDash" [vgMedia]="media" [vgDash]="url" [vgHls]="url" id="singleVideo"  [src]='url' controls autoplay crossorigin>
               </video>
         </a-assets>
+        <a-video src="#singleVideo" width="40" height="20" position="0 0 -20"  controls></a-video>
         <a-camera>
             <a-cursor color="red"></a-cursor>
         </a-camera>
     </a-scene>
 </vg-player>
+
 <button (click)='Console()'>Console</button>

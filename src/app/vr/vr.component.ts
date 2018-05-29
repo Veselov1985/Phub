@@ -22,8 +22,8 @@ export class VrComponent implements OnInit {
    console.log(this.api.getDefaultMedia())
    
   }
-  Console(){
-    console.log(this.dashBitrates)
+  Console(ev:any){
+    console.log(ev)
 
   }
 
