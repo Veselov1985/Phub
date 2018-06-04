@@ -6,6 +6,7 @@ import { SharedModule } from './Shared/Shared.module';
 import { VrComponent } from './vr/vr.component';
 import { SharedVideoModule } from './SharedVideo/SharedVideo.module';
 
+import { CoreModule } from './Core/Core.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +14,11 @@ import { SharedVideoModule } from './SharedVideo/SharedVideo.module';
     VrComponent
 ],
   imports: [
-  SharedModule,
+
+SharedModule,
   BrowserModule,
-  SharedVideoModule
+  SharedVideoModule,
+  CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],
